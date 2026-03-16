@@ -7,7 +7,15 @@
 
 
 
+
+
+
+
 <title>Nexus</title>
+
+
+
+
 
 
 
@@ -18,7 +26,15 @@
 
 
 
+
+
+
+
 <style>
+
+
+
+
 
 
 
@@ -34,6 +50,10 @@ overflow:hidden;
 
 
 
+
+
+
+
 .sidebar{
 position:fixed;
 width:220px;
@@ -41,6 +61,10 @@ height:100%;
 background:#020617;
 box-shadow:0 0 15px black;
 }
+
+
+
+
 
 
 
@@ -56,6 +80,10 @@ font-weight:bold;
 
 
 
+
+
+
+
 .nav{
 padding:14px 20px;
 cursor:pointer;
@@ -65,9 +93,17 @@ transition:.2s;
 
 
 
+
+
+
+
 .nav:hover{
 background:#1e293b;
 }
+
+
+
+
 
 
 
@@ -81,9 +117,17 @@ overflow:auto;
 
 
 
+
+
+
+
 .page{
 display:none;
 }
+
+
+
+
 
 
 
@@ -95,12 +139,20 @@ display:block;
 
 
 
+
+
+
+
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
 gap:20px;
 padding:30px;
 }
+
+
+
+
 
 
 
@@ -117,10 +169,18 @@ transition:.2s;
 
 
 
+
+
+
+
 .card:hover{
 background:#334155;
 transform:scale(1.05);
 }
+
+
+
+
 
 
 
@@ -134,11 +194,19 @@ border:none;
 
 
 
+
+
+
+
 input{
 padding:10px;
 border:none;
 border-radius:6px;
 }
+
+
+
+
 
 
 
@@ -154,12 +222,20 @@ cursor:pointer;
 
 
 
+
+
+
+
 #particles-js{
 position:fixed;
 width:100%;
 height:100%;
 z-index:-1;
 }
+
+
+
+
 
 
 
@@ -176,11 +252,19 @@ text-align:center;
 
 
 
+
+
+
+
 .shortcuts{
 display:flex;
 gap:30px;
 margin-top:40px;
 }
+
+
+
+
 
 
 
@@ -195,9 +279,17 @@ cursor:pointer;
 
 
 
+
+
+
+
 .shortcut:hover{
 background:#334155;
 }
+
+
+
+
 
 
 
@@ -208,7 +300,15 @@ background:#334155;
 
 
 
+
+
+
+
 <body>
+
+
+
+
 
 
 
@@ -218,11 +318,21 @@ background:#334155;
 
 
 
+
+
+
+
 <div class="sidebar">
+
+
 
 
 <img src="data:image/jpeg;base64,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" alt="nexus" width="100% ""height="auto"</img>
 <div class="logo">Nexus</div>
+
+
+
+
 
 
 
@@ -238,7 +348,15 @@ background:#334155;
 
 
 
+
+
+
+
 </div>
+
+
+
+
 
 
 
@@ -248,7 +366,15 @@ background:#334155;
 
 
 
+
+
+
+
 <!-- HOME -->
+
+
+
+
 
 
 
@@ -258,7 +384,15 @@ background:#334155;
 
 
 
+
+
+
+
 <div class="grid">
+
+
+
+
 
 
 
@@ -271,6 +405,13 @@ background:#334155;
 <div class="card" onclick="openPage('owner')">👑 Owner</div>
 
 
+</div>
+
+
+
+
+
+
 
 
 </div>
@@ -278,7 +419,6 @@ background:#334155;
 
 
 
-</div>
 
 
 
@@ -288,7 +428,15 @@ background:#334155;
 
 
 
+
+
+
+
 <div id="games" class="page">
+
+
+
+
 
 
 
@@ -308,6 +456,10 @@ cursor:pointer;
 ">
 ⬅ Back
 </button>
+
+
+
+
 
 
 
@@ -325,7 +477,17 @@ background:black;
 
 
 
+
+
+
+
 </div>
+
+
+
+
+
+
 
 
 
@@ -337,7 +499,13 @@ background:black;
 
 
 
+
+
+
+
 <div id="movies" class="page">
+
+
 
 
 <button onclick="openPage('home')"
@@ -355,6 +523,10 @@ cursor:pointer;
 ">
 ⬅ Back
 </button>
+
+
+
+
 
 
 
@@ -372,7 +544,15 @@ background:black;
 
 
 
+
+
+
+
 </div>
+
+
+
+
 
 
 
@@ -382,7 +562,13 @@ background:black;
 
 
 
+
+
+
+
 <div id="apps" class="page">
+
+
 
 
 <button onclick="openPage('home')"
@@ -400,6 +586,10 @@ cursor:pointer;
 ">
 ⬅ Back
 </button>
+
+
+
+
 
 
 
@@ -417,7 +607,15 @@ background:black;
 
 
 
+
+
+
+
 </div>
+
+
+
+
 
 
 
@@ -427,7 +625,13 @@ background:black;
 
 
 
+
+
+
+
 <div id="browser" class="page">
+
+
 
 
 <button onclick="openPage('home')"
@@ -449,6 +653,10 @@ cursor:pointer;
 
 
 
+
+
+
+
 <iframe
 src="proxy.html"
 style="
@@ -462,7 +670,15 @@ background:black;
 
 
 
+
+
+
+
 </div>
+
+
+
+
 
 
 
@@ -472,12 +688,24 @@ background:black;
 
 
 
+
+
+
+
 <div id="settings" class="page">
 
 
 
 
+
+
+
+
 <div style="padding:40px">
+
+
+
+
 
 
 
@@ -487,7 +715,15 @@ background:black;
 
 
 
+
+
+
+
 <button onclick="toggleTheme()">Toggle Theme</button>
+
+
+
+
 
 
 
@@ -497,17 +733,33 @@ background:black;
 
 
 
+
+
+
+
 <button onclick="launchBlank()">Launch in about:blank</button>
 
 
 
 
-</div>
 
 
 
 
 </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
 
 
 
@@ -517,7 +769,15 @@ background:black;
 
 
 
+
+
+
+
 <div id="owner" class="page">
+
+
+
+
 
 
 
@@ -527,7 +787,15 @@ background:black;
 
 
 
+
+
+
+
 <h1>Owner Panel</h1>
+
+
+
+
 
 
 
@@ -537,7 +805,15 @@ background:black;
 
 
 
+
+
+
+
 <ul>
+
+
+
+
 
 
 
@@ -547,7 +823,15 @@ background:black;
 
 
 
+
+
+
+
 <li>Movie streaming</li>
+
+
+
+
 
 
 
@@ -557,7 +841,15 @@ background:black;
 
 
 
+
+
+
+
 <li>Built-in browser</li>
+
+
+
+
 
 
 
@@ -565,6 +857,10 @@ background:black;
 <li>Particles animated background</li>
 
 
+<br>
+<br>
+<br>
+<h3> Join Nexus Discord Server at: discord.gg/mUHk4kECw </h3>
 
 
 </ul>
@@ -572,7 +868,6 @@ background:black;
 
 
 
-</div>
 
 
 
@@ -582,12 +877,26 @@ background:black;
 
 
 
+
+
+
+
 </div>
+
+
+
+
+
+
 
 
 
 
 <script>
+
+
+
+
 
 
 
@@ -600,6 +909,10 @@ document.getElementById(id).classList.add("active")
 
 
 
+
+
+
+
 function playMovie(link){
 document.getElementById("movieFrame").src=link
 }
@@ -607,9 +920,17 @@ document.getElementById("movieFrame").src=link
 
 
 
+
+
+
+
 function openApp(link){
 document.getElementById("appFrame").src=link
 }
+
+
+
+
 
 
 
@@ -625,10 +946,18 @@ document.getElementById("browserFrame").src=url
 
 
 
+
+
+
+
 function toggleTheme(){
 document.body.style.background=
 document.body.style.background=="black"?"#020617":"black"
 }
+
+
+
+
 
 
 
@@ -647,9 +976,17 @@ win.document.body.appendChild(iframe)
 
 
 
+
+
+
+
 function randomGame(){
 alert("Add your game links here for randomizer.")
 }
+
+
+
+
 
 
 
@@ -665,13 +1002,35 @@ move:{speed:2}
 
 
 
+
+
+
+
 </script>
+
+
+
+
 
 
 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
